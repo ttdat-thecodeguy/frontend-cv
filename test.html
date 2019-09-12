@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/input.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.0/css/all.css"
+                integrity="sha384-yXyaKVWGB2SyDoYATyErcgoNH1iAnnf8fCXejZM4NYUbhWiGkZoMwh6IoJ4v5ogi"
+                crossorigin="anonymous">
+</head>
+<body>
+    <div class="login-section">
+                <form class="frm">
+                    <input type="text" name="usr" placeholder="Username"/>
+                    <i class="fas fa-envelope icon"></i>
+                    <br>
+                    <input id="passwordField" type="password" name="psw" placeholder="password"/>
+                    <i class="fas fa-lock icon"></i>
+                    <a class="btn" id="btn-eye"><i id="icon-eye" class="fas fa-eye"></i></a>
+                </form>
+    </div>
+    <script>
+        var passwordField = document.getElementById("passwordField");
+        var btnEye = document.getElementById("btn-eye");
+        btnEye.addEventListener('click', changeeye,false);
+        function changeeye(){
+            document.getElementById("icon-eye").classList.toggle("fa-eye-slash");
+            if(passwordField.type == 'password')
+                passwordField.type = 'text';
+            else
+                passwordField.type = 'password';          
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.login-section{
+    display: block;
+  
+}
+input[type=text],
+input[type=password] {
+    padding: 16px 40px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    border:1px solid rgb(136, 133, 133);
+    
+}
+
+.icon::before{
+    position: relative;
+    right: 270px;
+    font-size: 23px;
+}
+.btn{
+    position: relative;
+    left: -65px;
+}
